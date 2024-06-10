@@ -1,0 +1,55 @@
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 446px;
+}
+
+#calendar td {
+    width: 137px;
+}
+
+#calendar>tbody {
+    margin: auto;
+    display: flex;
+    width: 1000px;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    height: 80px;
+}
+
+td:hover {
+    background-color: #f2f2f2;
+}
+
+/* Style the days with events */
+.event-day {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the weekend days */
+td:nth-child(1),
+td:nth-child(7) {
+    color: #4CAF50;
+    font-weight: bold;
+}
